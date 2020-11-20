@@ -22,6 +22,11 @@ footer {
 }
 </style>
 </head>
+  
+<!-- ***
+     Your <body> should start here. Everything that you want to be displayed on the page should go inside the <body> element.
+     *** -->
+  
 <div>
   <a href="Owen.html">Home</a>
   <a href="Gallery.html">Gallery</a>
@@ -30,6 +35,11 @@ footer {
 <!-- Black background.. Less boring -->
 <body>
   <h1>Owen Reynolds</h1>
+  
+  <!-- ***
+       For your images to show, you need to make sure you upload them to GitHub too. 
+       There should be a folder called Img with your images in. 
+       *** -->
 <img src="Img/Me.jpg" alt="ME" style="max-width: 15%" />
 <div>
 <h4>Where I came from:</h4>
@@ -42,12 +52,26 @@ footer {
 <p>It was actually my brother that got me into film photography, I was quite stubborn at first. Comfortable with my digital Canon,
   I wasn't prepared for the world of analogue. However, eventually I gave in and bought myself an original Olympus OM1n, in black (a rare colourway
   in  good condition). Anyway, I dived straight in and now I develop and scan all of my own images! It's a hugely rewarding process and I'm so glad I started!</p>
+  
+  <!-- ***
+       This is a really minor point, but your closing </p> below has an uppercase P.
+       *** -->
+  
 <p>If you're interested, I've added a link to the Leica website at the bottom of the page, probably my favourite camera brand to date.</P>
 <!-- Blabbering on about film photography as per -->
   <h4>Olympus OM1n produced in 1972.</h4>
 <img src="Img/Olympus.jpg" alt="Camera" style="max-width: 15%" />
 <!-- FUN FACT: I took this shot -->
 <p>Here's what it sounds like, because why not, right?</p>
+  
+<!-- ***
+     You've provided a single source format here - at least 2 would be better. As with the images, you've not uploaded the Aud folder, so this
+     file can't be found by browsers.
+
+     It would have been good to include content after the <source> element as a fallback for browsers that don't support the <audio> element.
+     Most usefully, this could be a short paragraph of text telling them their browser doesn't support web audio, and a link to download the 
+     file.
+     ***-->
 <audio controls>
   <source src="Aud/filmcamera.wav" type="audio/wav">
   </audio>
@@ -56,3 +80,9 @@ footer {
 
 <footer>Thank you for visiting my site, and here is the Leica link as promised!
 <a href="https://store.leica-camera.com/uk/en/leica-m-system?p=1">Leica</a></footer>
+  
+<!-- ***
+     Don't forget that at the end of every html page, you need to close the body and html elements with:
+        </body>
+      </html>
+     *** -->
